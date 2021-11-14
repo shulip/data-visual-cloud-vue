@@ -1,12 +1,12 @@
 <template>
   <div id="app">
-<!--    <div id="nav">-->
-<!--      <router-link to="/">Home</router-link> |-->
-<!--      <router-link to="/about">About</router-link> |-->
+    <div id="nav">
+      <router-link to="/topMovie">高分电影趋势</router-link> |
+      <router-link to="/genres">体裁趋势</router-link>
 <!--      <router-link to="/echarts">Echarts</router-link>-->
-
-<!--    </div>-->
-    <router-view/>
+      <router-view/>
+    </div>
+<!--    <router-view/>-->
   </div>
 </template>
 

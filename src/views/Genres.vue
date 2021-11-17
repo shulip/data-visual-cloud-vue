@@ -47,6 +47,7 @@ export default {
     }
   },
   mounted () {
+    this.handleChange()
     this.drawLine()
   },
   methods: {
@@ -56,7 +57,7 @@ export default {
       // 参数情况：（interfaceState：query参数，ID：body参数）
       this.$axios({
         url: 'http://localhost:5000/genres',
-        method: 'post',
+        method: 'get',
         // data: { ID: '123' }, // body参数
         params: {
           begin: this.$data.begin.getYear(),
@@ -114,7 +115,7 @@ export default {
         align: config.align,
         verticalAlign: config.verticalAlign,
         rotate: config.rotate,
-        formatter: '{c}  {name|{a}}',
+        formatter: '{c}',
         fontSize: 11,
         rich: {
           name: {}
